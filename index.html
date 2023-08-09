@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel="stylesheet">
+</head>
+
+<body>
+    <h3>Password Generator</h3>
+    <div class="password-container">
+        <div class="password">PTx1f5DaFX</div>
+        <div class="copybutton">
+            <button>
+                <i class="far fa-copy"></i>
+            </button>
+        </div>
+    </div>
+    <div class="character-length-container">
+        <p class="character-length">Character Length</p>
+        <div id="slider-value"></div>
+        <div>
+            <input type="range" min="1" max="20" value="10" class="slider" id="myRange">
+        </div>
+
+        <div class="wrapper">
+            <div class="one-line">
+                <input type="checkbox" id="uppercase" class="checkbox" />
+                <label for="uppercase">Include Uppercase Letters</label>
+            </div>
+            <div class="one-line">
+                <input type="checkbox" id="lowercase" class="checkbox" />
+                <label for="lowercase">Include Lowercase Letters</label>
+            </div>
+            <div class="one-line">
+                <input type="checkbox" id="numbers" class="checkbox" />
+                <label for="numbers">Include Numbers</label>
+            </div>
+            <div class="one-line">
+                <input type="checkbox" id="symbols" class="checkbox" />
+                <label for="symbols">Include Symbols</label>
+            </div>
+        </div>
+        <div class="strength-container">
+            <p class="strength">STRENGTH</p>
+            <p class="difficulty">MEDIUM</p>
+            <div class="box-cont">
+                <div class="diff tooweak box1"></div>
+                <div class="diff weak box2"></div>
+                <div class="diff medium box3"></div>
+                <div class="diff strong box4"></div>
+            </div>
+        </div>
+        <button class="generate-button">Generate &rarr;</button>
+    </div>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" />
+
+</body>
+
+</html>
